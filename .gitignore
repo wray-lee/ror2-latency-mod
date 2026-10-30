@@ -1,0 +1,10 @@
+bin/
+obj/
+TestResults/
+.vs/
+.idea/
+*.user
+*.suo
+*.dll
+.scratch/
+tmp/

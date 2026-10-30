@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <IsPackable>false</IsPackable>
+    <RootNamespace>RoR2LatencyMod.Tests</RootNamespace>
+  </PropertyGroup>
+
+  <!-- Local install path; assemblies are referenced from disk and never copied into the repo. -->
+  <PropertyGroup>
+    <R2ApiCoreDir>$(APPDATA)\r2modmanPlus-local\RiskOfRain2\profiles\Default\BepInEx\plugins\RiskofThunder-R2API_Core\R2API.Core</R2ApiCoreDir>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.14.1" />
+    <PackageReference Include="xunit" Version="2.9.3" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.8.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\RoR2LatencyMod\RoR2LatencyMod.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="R2API.Core">
+      <HintPath>$(R2ApiCoreDir)\R2API.Core.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+</Project>

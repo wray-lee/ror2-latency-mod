@@ -1,0 +1,10 @@
+{
+  "name": "RoR2LatencyMod",
+  "version_number": "0.1.0",
+  "website_url": "https://github.com/wray-lee/ror2-latency-mod",
+  "description": "Client-side lag compensation for Enforcer Shield Tackle and Loader grapple when you are not the host. Replaces LoaderRuler. Vanilla hosts work; hits stay host-side.",
+  "dependencies": [
+    "bbepis-BepInExPack-5.4.2122",
+    "RiskofThunder-R2API_Core-5.3.0"
+  ]
+}

@@ -8,3 +8,12 @@ TestResults/
 *.dll
 .scratch/
 tmp/
+
+# Local multi-instance test notes and scripts; kept out of the public repo.
+docs/research-test-setup.md
+docs/test-environment.md
+docs/manual-checks.md
+docs/test-guide.md
+docs/cleanup-list.md
+tools/install-to-profiles.bat
+tools/start-instance.bat
